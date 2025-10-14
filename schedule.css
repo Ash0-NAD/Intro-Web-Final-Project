@@ -1,0 +1,191 @@
+/* Schedule Hero Section */
+.schedule-hero {
+    background: linear-gradient(180deg, #FFE5D9 0%, #FFD4C1 100%);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+}
+
+.schedule-hero h1 {
+    font-size: 3.5rem;
+    color: #FFB088;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Schedule Section */
+.schedule-section {
+    background: linear-gradient(180deg, #FFD4C1 0%, #FFE5D9 100%);
+    padding: 3rem 2rem 6rem;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Schedule Form Card */
+.schedule-form-card {
+    background: #FF8D5D;
+    border-radius: 4rem;
+    padding: 4rem 3.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.schedule-form-card h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.schedule-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.schedule-form-card input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.05rem;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #999;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.schedule-form-card input::placeholder {
+    color: #999;
+    font-weight: 400;
+}
+
+.schedule-form-card input:focus {
+    outline: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #FFB088;
+    color: white;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+
+.submit-btn:hover {
+    background: #FF9966;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Form Note */
+.form-note {
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .schedule-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .schedule-section {
+        padding: 2rem 1rem 4rem;
+    }
+
+    .schedule-form-card {
+        padding: 3rem 2.5rem;
+        border-radius: 3rem;
+    }
+
+    .schedule-form-card h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .schedule-form-card input {
+        padding: 1.1rem 1.3rem;
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        padding: 1.1rem 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule-hero {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .schedule-hero h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    .schedule-section {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .schedule-form-card {
+        padding: 2.5rem 2rem;
+        border-radius: 2.5rem;
+    }
+
+    .schedule-form-card h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .schedule-form-card input {
+        padding: 1rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .schedule-form-card form {
+        gap: 1rem;
+    }
+
+    .submit-btn {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 1.5rem;
+    }
+
+    .form-note {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
