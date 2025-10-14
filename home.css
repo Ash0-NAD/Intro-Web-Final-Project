@@ -11,6 +11,13 @@ body {
     background-color: #fff;
 }
 
+/* Active navigation link */
+nav a.active {
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+
 /* Header */
 header {
     background: #fff;
