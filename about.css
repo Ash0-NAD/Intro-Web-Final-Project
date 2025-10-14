@@ -1,16 +1,3 @@
-/* About Page Specific Styles */
-
-/* Active navigation link */
-nav a.active {
-    color: #ff6b35;
-    font-weight: bold;
-}
-
-.schedule-btn {
-    background: #ff6b35;
-    color: white;
-}
-
 /* About Hero Banner */
 .about-hero {
     width: 100%;
