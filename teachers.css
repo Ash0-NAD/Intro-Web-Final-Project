@@ -1,0 +1,190 @@
+/* Teachers Hero Section */
+.teachers-hero {
+    background: linear-gradient(180deg, #FFE5D9 0%, #FFD4C1 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.teachers-hero h1 {
+    font-size: 3.5rem;
+    color: #FFB088;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Teachers Section */
+.teachers-section {
+    background: linear-gradient(180deg, #FFD4C1 0%, #FFE5D9 100%);
+    padding: 3rem 2rem 5rem;
+    min-height: 70vh;
+}
+
+.teachers-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+/* Teacher Cards */
+.teacher-card {
+    border-radius: 2rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 320px;
+}
+
+.teacher-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Orange Cards */
+.teacher-card.orange {
+    background: #FF8D5D;
+    color: #000;
+}
+
+/* Light/Pink Cards */
+.teacher-card.light {
+    background: #FFE5D9;
+    color: #000;
+}
+
+/* Teacher Avatar */
+.teacher-avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fallback icon if image doesn't load */
+.teacher-avatar-circle::before {
+    content: "👤";
+    font-size: 3.5rem;
+    color: #666;
+}
+
+.teacher-avatar-circle img + .teacher-avatar-circle::before {
+    display: none;
+}
+
+/* Teacher Info */
+.teacher-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.teacher-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.teacher-explanation {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .teachers-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .teachers-grid-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+
+    .teacher-card {
+        padding: 2rem 1.5rem;
+        min-height: 280px;
+    }
+
+    .teacher-avatar-circle {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.2rem;
+    }
+
+    .teacher-name {
+        font-size: 1.3rem;
+    }
+
+    .teacher-role {
+        font-size: 1rem;
+    }
+
+    .teacher-explanation {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .teachers-hero {
+        padding: 3rem 1rem;
+    }
+
+    .teachers-hero h1 {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+    .teachers-section {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .teacher-card {
+        padding: 1.5rem 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .teacher-avatar-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .teacher-avatar-circle::before {
+        font-size: 3rem;
+    }
+}
