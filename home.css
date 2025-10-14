@@ -183,8 +183,6 @@ nav a:hover {
     align-items: center;
 }
 
-
-
 .about-image {
     position: relative;
 }
@@ -217,15 +215,14 @@ nav a:hover {
 }
 
 .about-btn a {
-    color: white;              
-    text-decoration: none;   
+    color: white;
+    text-decoration: none;
 }
 
 .about-btn a:hover {
-    text-decoration: none;     
-    color: white;             
+    text-decoration: none;
+    color: white;
 }
-
 
 .about-btn:hover {
     background: #e55a24;
@@ -408,20 +405,20 @@ footer {
     justify-content: center;
     width: 30px;
     height: 30px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     font-size: 1rem;
 }
 
 .social-links a:hover {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 0.85rem;
 }
 
@@ -459,6 +456,56 @@ footer {
     .footer-container {
         grid-template-columns: 1fr;
     }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.feature-icon img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.rounded-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-btn,
+.program-btn,
+.view-all-teachers {
+    width: auto;
+}
+
+button {
+    white-space: nowrap;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.logo {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
 
     .hero-content h1 {
         font-size: 1.8rem;
