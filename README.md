@@ -4,3 +4,4 @@ Added Homepage, Missing Features to be added in "VERSION 2"
 
 Version 2
 Added the about page with html, css, and js. 
+Added stduentslearning.png.
