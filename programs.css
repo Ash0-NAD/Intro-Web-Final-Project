@@ -1,0 +1,269 @@
+/* Programs Hero Section */
+.programs-hero {
+    background: linear-gradient(135deg, #FF8D5D 0%, #FFB088 100%);
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    color: white;
+}
+
+.programs-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+}
+
+.programs-hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* Programs Details Section */
+.programs-details {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.programs-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.program-detail-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.program-header {
+    padding: 2.5rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+.program-header.junior {
+    background: linear-gradient(135deg, #FF8D5D 0%, #FFB088 100%);
+}
+
+.program-header.senior {
+    background: linear-gradient(135deg, #FFB088 0%, #FFD4B8 100%);
+}
+
+.program-header.testprep {
+    background: linear-gradient(135deg, #FF6B3D 0%, #FF8D5D 100%);
+}
+
+.program-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.program-header .age-range {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-weight: 600;
+}
+
+.program-body {
+    padding: 2.5rem 2rem;
+}
+
+.program-description h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+}
+
+.program-description p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.program-learn {
+    background: #F5F5F5;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.program-learn h4 {
+    color: #FF8D5D;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.program-learn ul {
+    list-style: none;
+    padding: 0;
+}
+
+.program-learn li {
+    padding: 0.7rem 0;
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.program-learn li i {
+    color: #FF8D5D;
+    font-size: 1.1rem;
+}
+
+.program-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #FFF5F0;
+    border-radius: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: #FF8D5D;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.enroll-btn {
+    background: #FF8D5D;
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.enroll-btn:hover {
+    background: #e56b45;
+    transform: scale(1.05);
+}
+
+/* CTA Section */
+.programs-cta {
+    background: linear-gradient(135deg, #FF8D5D 0%, #FFB088 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    margin: 4rem 0 0;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-btn-large {
+    background: white;
+    color: #FF8D5D;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-btn-large:hover {
+    background: #FFE2D5;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .programs-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .programs-hero-content p {
+        font-size: 1rem;
+    }
+
+    .program-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .program-header .age-range {
+        font-size: 1.1rem;
+    }
+
+    .program-description h3 {
+        font-size: 1.2rem;
+    }
+
+    .program-info {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .programs-hero {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .program-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .enroll-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
