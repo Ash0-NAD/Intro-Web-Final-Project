@@ -1,0 +1,295 @@
+/* About Page Specific Styles */
+
+/* Active navigation link */
+nav a.active {
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+.schedule-btn {
+    background: #ff6b35;
+    color: white;
+}
+
+/* About Hero Banner */
+.about-hero {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=300&fit=crop') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.about-hero-overlay h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.mission-vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mission-vision-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mission-box, .vision-box {
+    background: white;
+    padding: 0;
+}
+
+.mission-box h2, .vision-box h2 {
+    color: #ff6b35;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.mission-box p, .vision-box p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.mission-vision-image {
+    position: relative;
+}
+
+.mission-vision-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+    border: 8px solid #fff5f2;
+}
+
+/* Why Choose Section */
+.why-choose {
+    background: #fff5f2;
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+.section-title-orange {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6b35;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.why-choose-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.why-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.why-card.active {
+    background: #ff6b35;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+.why-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.why-card.active p {
+    color: white;
+}
+
+/* Learning Environment Section */
+.learning-environment {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.environment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.environment-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.environment-image:hover {
+    transform: scale(1.02);
+}
+
+.environment-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer Updates for About Page */
+footer {
+    background: #ff6b35;
+    color: white;
+    padding: 2.5rem 2rem 1.5rem;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.follow-us h4 {
+    margin-bottom: 1rem;
+}
+
+.social-links-about {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #ff6b35;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .mission-vision-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-vision-image {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission-vision-image img {
+        max-width: 400px;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card.active {
+        transform: scale(1);
+    }
+
+    .environment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .section-title-orange {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 200px;
+    }
+
+    .about-hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .mission-box h2, .vision-box h2 {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links-about {
+        justify-content: center;
+    }
+}
