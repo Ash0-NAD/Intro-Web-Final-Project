@@ -1,13 +1,14 @@
 /* Teachers Hero Section */
 .teachers-hero {
-    background: linear-gradient(180deg, #FFE5D9 0%, #FFD4C1 100%);
+    /* page background (except navbar/footer) */
+    background: #FFE4C5;
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .teachers-hero h1 {
     font-size: 3.5rem;
-    color: #FFB088;
+    color: #FF8F5F;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: 3px;
@@ -16,7 +17,8 @@
 
 /* Teachers Section */
 .teachers-section {
-    background: linear-gradient(180deg, #FFD4C1 0%, #FFE5D9 100%);
+    /* main area background (keeps navbar/footer untouched) */
+    background: #FFE4C5;
     padding: 3rem 2rem 5rem;
     min-height: 70vh;
 }
@@ -33,13 +35,13 @@
 /* Teacher Cards */
 .teacher-card {
     border-radius: 2rem;
-    padding: 2.5rem 2rem;
+    padding: 2.75rem 2rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 320px;
+    min-height: 380px;
 }
 
 .teacher-card:hover {
@@ -55,7 +57,7 @@
 
 /* Light/Pink Cards */
 .teacher-card.light {
-    background: #FFE5D9;
+    background: #FFE2D5;
     color: #000;
 }
 
@@ -137,8 +139,8 @@
     }
 
     .teacher-card {
-        padding: 2rem 1.5rem;
-        min-height: 280px;
+        padding: 2.25rem 1.5rem;
+        min-height: 340px;
     }
 
     .teacher-avatar-circle {
@@ -175,8 +177,9 @@
     }
 
     .teacher-card {
-        padding: 1.5rem 1rem;
+        padding: 1.75rem 1rem;
         border-radius: 1.5rem;
+        min-height: 300px;
     }
 
     .teacher-avatar-circle {
@@ -187,4 +190,12 @@
     .teacher-avatar-circle::before {
         font-size: 3rem;
     }
+}
+
+footer {
+    margin-top: 0;
+}
+
+.teachers-section {
+    margin-bottom: 0;
 }
