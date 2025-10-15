@@ -43,7 +43,7 @@
 }
 
 .mission-box h2, .vision-box h2 {
-    color: #ff6b35;
+    color: #FF8D5D;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -63,13 +63,13 @@
     width: 100%;
     max-width: 500px;
     border-radius: 50%;
-    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
-    border: 8px solid #fff5f2;
+    box-shadow: 0 10px 30px rgba(255, 141, 93, 0.2);
+    border: 8px solid #FFE2D5;
 }
 
 /* Why Choose Section */
 .why-choose {
-    background: #fff5f2;
+    background: #FFE2D5;
     padding: 4rem 2rem;
     margin: 3rem 0;
 }
@@ -77,7 +77,7 @@
 .section-title-orange {
     text-align: center;
     font-size: 2.5rem;
-    color: #ff6b35;
+    color: #FF8D5D;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -112,10 +112,10 @@
 }
 
 .why-card.active {
-    background: #ff6b35;
+    background: #FF8D5D;
     color: white;
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 8px 20px rgba(255, 141, 93, 0.3);
 }
 
 .why-icon {
@@ -179,7 +179,7 @@
 
 /* Footer Updates for About Page */
 footer {
-    background: #ff6b35;
+    background: #FF8D5D;
     color: white;
     padding: 2.5rem 2rem 1.5rem;
 }
@@ -210,7 +210,7 @@ footer {
     width: 40px;
     height: 40px;
     background: white;
-    color: #ff6b35;
+    color: #FF8D5D;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -293,6 +293,10 @@ footer {
         padding: 2rem 1.5rem;
     }
 
+    .why-card h3 {
+        font-size: 1rem;
+    }
+}
     .why-card h3 {
         font-size: 1rem;
     }
