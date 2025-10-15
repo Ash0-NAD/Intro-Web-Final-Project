@@ -109,17 +109,17 @@ nav a:hover {
 
 .hero-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 520px;
     display: block;
 }
 
 .rounded-image {
     background: #FF8D5D;
     border-radius: 2rem;
-    padding: 1.5rem;
+    padding: 1rem 1.25rem;
     display: inline-block;
     width: 100%;
-    max-width: 400px;
+    max-width: 520px;
 }
 
 .rounded-image img {
@@ -439,6 +439,11 @@ footer {
 
     .footer-container {
         grid-template-columns: 1fr;
+    }
+    
+    /* Scale hero image down on smaller screens so it doesn't overflow */
+    .hero-image img, .rounded-image {
+        max-width: 420px;
     }
 }
 
