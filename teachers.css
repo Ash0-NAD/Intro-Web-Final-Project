@@ -82,13 +82,6 @@
     object-fit: cover;
 }
 
-/* Fallback icon if image doesn't load */
-.teacher-avatar-circle::before {
-    content: "👤";
-    font-size: 3.5rem;
-    color: #666;
-}
-
 .teacher-avatar-circle img + .teacher-avatar-circle::before {
     display: none;
 }
