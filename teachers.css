@@ -1,208 +1,208 @@
 /* Teachers Hero Section */
 .teachers-hero {
-    /* page background (except navbar/footer) */
-    background: #FFE4C5;
-    padding: 4rem 2rem;
-    text-align: center;
+    /* page background (except navbar/footer) */
+    background: #FFE4C5;
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
 .teachers-hero h1 {
-    font-size: 3.5rem;
-    color: #FF8F5F;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #FF8F5F;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 /* Teachers Section */
 .teachers-section {
-    /* main area background (keeps navbar/footer untouched) */
-    background: #FFE4C5;
-    padding: 3rem 2rem 5rem;
-    min-height: 70vh;
+    /* main area background (keeps navbar/footer untouched) */
+    background: #FFE4C5;
+    padding: 3rem 2rem 5rem;
+    min-height: 70vh;
 }
 
 .teachers-grid-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 2rem 0;
 }
 
 /* Teacher Cards */
 .teacher-card {
-    border-radius: 2rem;
-    padding: 2.75rem 2rem;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 380px;
+    border-radius: 2rem;
+    padding: 2.75rem 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px;
 }
 
 .teacher-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Orange Cards */
 .teacher-card.orange {
-    background: #FF8D5D;
-    color: #000;
+    background: #FF8D5D;
+    color: #000;
 }
 
 /* Light/Pink Cards */
 .teacher-card.light {
-    background: #FFE2D5;
-    color: #000;
+    background: #FFE2D5;
+    color: #000;
 }
 
 /* Teacher Avatar */
 .teacher-avatar-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .teacher-avatar-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .teacher-avatar-circle {
-    position: relative; /* ensure stacking context for pseudo-elements */
+    position: relative; /* ensure stacking context for pseudo-elements */
 }
 
 .teacher-avatar-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: relative;
-    z-index: 1; /* make sure the image is above any pseudo elements */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1; /* make sure the image is above any pseudo elements */
 }
 
 /* hide fallback pseudo-element so it doesn't accidentally cover real images */
 .teacher-avatar-circle::before {
-    display: none;
+    display: none;
 }
 
 /* Teacher Info */
 .teacher-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .teacher-role {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .teacher-explanation {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .teachers-grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
+    .teachers-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .teachers-hero h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
+    .teachers-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
 
-    .teachers-grid-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 1rem 0;
-    }
+    .teachers-grid-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
 
-    .teacher-card {
-        padding: 2.25rem 1.5rem;
-        min-height: 340px;
-    }
+    .teacher-card {
+        padding: 2.25rem 1.5rem;
+        min-height: 340px;
+    }
 
-    .teacher-avatar-circle {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 1.2rem;
-    }
+    .teacher-avatar-circle {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.2rem;
+    }
 
-    .teacher-name {
-        font-size: 1.3rem;
-    }
+    .teacher-name {
+        font-size: 1.3rem;
+    }
 
-    .teacher-role {
-        font-size: 1rem;
-    }
+    .teacher-role {
+        font-size: 1rem;
+    }
 
-    .teacher-explanation {
-        font-size: 0.95rem;
-    }
+    .teacher-explanation {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .teachers-hero {
-        padding: 3rem 1rem;
-    }
+    .teachers-hero {
+        padding: 3rem 1rem;
+    }
 
-    .teachers-hero h1 {
-        font-size: 2rem;
-        letter-spacing: 1.5px;
-    }
+    .teachers-hero h1 {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
 
-    .teachers-section {
-        padding: 2rem 1rem 3rem;
-    }
+    .teachers-section {
+        padding: 2rem 1rem 3rem;
+    }
 
-    .teacher-card {
-        padding: 1.75rem 1rem;
-        border-radius: 1.5rem;
-        min-height: 300px;
-    }
+    .teacher-card {
+        padding: 1.75rem 1rem;
+        border-radius: 1.5rem;
+        min-height: 300px;
+    }
 
-    .teacher-avatar-circle {
-        width: 90px;
-        height: 90px;
-    }
+    .teacher-avatar-circle {
+        width: 90px;
+        height: 90px;
+    }
 
-    .teacher-avatar-circle::before {
-        font-size: 3rem;
-    }
+    .teacher-avatar-circle::before {
+        font-size: 3rem;
+    }
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 0;
 }
 
 .teachers-section {
-    margin-bottom: 0;
+    margin-bottom: 0;
 }
