@@ -337,8 +337,8 @@ nav a:hover {
 }
 
 .view-all-teachers {
-    background: white;
-    color: #FF8D5D;
+    background: #FF8D5D;
+    color: white;
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 0.5rem;
@@ -348,7 +348,7 @@ nav a:hover {
 }
 
 .view-all-teachers a {
-    color: #FF8D5D;
+    color: white;
     text-decoration: none;
 }
 
