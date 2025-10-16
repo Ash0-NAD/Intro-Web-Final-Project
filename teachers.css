@@ -1,6 +1,5 @@
 /* Teachers Hero Section */
 .teachers-hero {
-    /* page background (except navbar/footer) */
     background: #FFE4C5;
     padding: 4rem 2rem;
     text-align: center;
@@ -17,19 +16,18 @@
 
 /* Teachers Section */
 .teachers-section {
-    /* main area background (keeps navbar/footer untouched) */
     background: #FFE4C5;
-    padding: 3rem 2rem 5rem;
+    padding: 4rem 2rem 6rem;
     min-height: 70vh;
 }
 
 .teachers-grid-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding: 2rem 0;
+    gap: 3rem;
+    padding: 3rem 2rem;
 }
 
 /* Teacher Cards */
@@ -41,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 380px;
+    min-height: 400px;
 }
 
 .teacher-card:hover {
@@ -61,10 +59,24 @@
     color: #000;
 }
 
+.teacher-card h3 {
+    color: #000;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.teacher-card p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
 /* Teacher Avatar */
 .teacher-avatar-circle {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background: #fff;
     display: flex;
@@ -72,7 +84,7 @@
     justify-content: center;
     margin: 0 auto 1.5rem;
     overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.5);
+    border: 8px solid #FF8D5D;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,14 +94,21 @@
     object-fit: cover;
 }
 
-/* Fallback icon if image doesn't load */
-.teacher-avatar-circle::before {
-    content: "👤";
-    font-size: 3.5rem;
-    color: #666;
+.teacher-avatar-circle {
+    position: relative; /* ensure stacking context for pseudo-elements */
 }
 
-.teacher-avatar-circle img + .teacher-avatar-circle::before {
+.teacher-avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1; /* make sure the image is above any pseudo elements */
+}
+
+/* hide fallback pseudo-element so it doesn't accidentally cover real images */
+.teacher-avatar-circle::before {
     display: none;
 }
 
