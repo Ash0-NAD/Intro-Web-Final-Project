@@ -36,12 +36,9 @@
 .teacher-card {
     border-radius: 2rem;
     padding: 2.75rem 2rem;
-    text-align: center; 
+    text-align: center; /* Keeps text centered */
     transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 380px;
+    /* Removed explicit flex and min-height to allow content to naturally define card height */
 }
 
 .teacher-card:hover {
@@ -73,7 +70,7 @@
     /* Clips content (the image) to the circular boundary */
     overflow: hidden; 
     
-    /* Centering and spacing */
+    /* Centering and spacing (0 auto centers block element with fixed width) */
     margin: 0 auto 1.5rem;
     
     /* Styling */
@@ -82,7 +79,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     
-    display: flex;
+    display: flex; /* Kept flex here to properly center the image inside the circle */
     align-items: center;
     justify-content: center;
 }
@@ -148,7 +145,7 @@
 
     .teacher-card {
         padding: 2.25rem 1.5rem;
-        min-height: 340px;
+        /* min-height removed */
     }
 
     .teacher-avatar {
@@ -187,7 +184,7 @@
     .teacher-card {
         padding: 1.75rem 1rem;
         border-radius: 1.5rem;
-        min-height: 300px;
+        /* min-height removed */
     }
 
     .teacher-avatar {
@@ -204,4 +201,3 @@ footer {
 .teachers-section {
     margin-bottom: 0;
 }
-
