@@ -275,16 +275,21 @@ nav a:hover {
 .program-btn {
     background: white;
     color: #FF8D5D;
-    padding: 0.6rem 1.5rem;
+    padding: 0.8rem 2rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1rem;
     transition: background 0.3s;
 }
 
+.program-btn a {
+    color: #FF8D5D;
+    text-decoration: none;
+}
+
 .program-btn:hover {
-    background: #FFE2D5;
+    background: white;
 }
 
 /* Teachers Section */
@@ -332,18 +337,23 @@ nav a:hover {
 }
 
 .view-all-teachers {
-    background: #FF8D5D;
-    color: white;
-    padding: 0.6rem 2rem;
+    background: white;
+    color: #FF8D5D;
+    padding: 0.8rem 2rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1rem;
     transition: background 0.3s;
 }
 
+.view-all-teachers a {
+    color: #FF8D5D;
+    text-decoration: none;
+}
+
 .view-all-teachers:hover {
-    background: #e56b45;
+    background: white;
 }
 
 /* Footer */
@@ -446,4 +456,3 @@ footer {
         max-width: 420px;
     }
 }
-
