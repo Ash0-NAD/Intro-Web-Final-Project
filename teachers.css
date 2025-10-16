@@ -36,7 +36,7 @@
 .teacher-card {
     border-radius: 2rem;
     padding: 2.75rem 2rem;
-    text-align: center; /* FIX: Ensures all content (image and text) is centered */
+    text-align: center; 
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
@@ -61,17 +61,17 @@
     color: #000;
 }
 
-/* Teacher Avatar Container */
-.teacher-avatar-circle {
+/* Teacher Avatar Container (The outer circle/holder) */
+.teacher-avatar {
     /* Set dimensions for the circle */
     width: 120px;
     height: 120px;
     
-    /* CRITICAL: Makes it a circle */
+    /* Makes it a circle */
     border-radius: 50%;
     
-    /* CRITICAL: Clips content (the image) to the circular boundary */
-    overflow: hidden;
+    /* Clips content (the image) to the circular boundary */
+    overflow: hidden; 
     
     /* Centering and spacing */
     margin: 0 auto 1.5rem;
@@ -82,29 +82,24 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     
-    /* Flex properties are generally redundant here but kept for your original layout intent */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Teacher Avatar Image FIX */
-.teacher-avatar-circle img {
-    /* CRITICAL FIX: Forces the image to fill the container */
+/* Teacher Avatar Image (The image inside the circle) */
+.teacher-avatar-img { 
+    /* Forces the image to fill the container */
     width: 100%;
     height: 100%;
     
-    /* CRITICAL FIX: Scales the image to cover the entire container 
-       without stretching, cropping excess parts (solves the "white circle" issue) */
+    /* Scales the image to cover the entire container */
     object-fit: cover;
     
     display: block;
-    position: static; /* Simplified positioning */
+    position: static; 
     z-index: 1;
 }
-
-/* Removed redundant/unnecessary ::before rules */
-
 
 /* Teacher Info */
 .teacher-name {
@@ -156,7 +151,7 @@
         min-height: 340px;
     }
 
-    .teacher-avatar-circle {
+    .teacher-avatar {
         width: 100px;
         height: 100px;
         margin-bottom: 1.2rem;
@@ -195,7 +190,7 @@
         min-height: 300px;
     }
 
-    .teacher-avatar-circle {
+    .teacher-avatar {
         width: 90px;
         height: 90px;
     }
@@ -209,3 +204,4 @@ footer {
 .teachers-section {
     margin-bottom: 0;
 }
+
