@@ -40,7 +40,30 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     color: #FF8D5D;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
+
+/* Logo image sizing */
+.logo img {
+    height: 36px; /* match line-height of header */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Force logo and text to remain on one line */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* prevent wrapping */
+}
+
+
+/* If space is limited, allow nav to wrap but keep logo intact */
+.header-container { gap: 1rem; }
 
 nav {
     display: flex;
