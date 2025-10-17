@@ -1,17 +1,19 @@
 /* Teachers Hero Section */
 .teachers-hero {
-    background: #FFE4C5;
-    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #FF8D5D 0%, #FFB088 100%);
+    padding: 4.5rem 2rem;
     text-align: center;
+    box-shadow: inset 0 -40px 60px rgba(0,0,0,0.03);
 }
 
 .teachers-hero h1 {
     font-size: 3.5rem;
-    color: #FF8F5F;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 /* Teachers Section */
