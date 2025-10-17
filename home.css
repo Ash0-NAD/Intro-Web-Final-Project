@@ -54,6 +54,13 @@ header {
     display: inline-block;
 }
 
+/* Force logo and text to remain on one line */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* prevent wrapping */
+}
+
 
 /* If space is limited, allow nav to wrap but keep logo intact */
 .header-container { gap: 1rem; }
